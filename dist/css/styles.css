@@ -57,13 +57,12 @@ p {
   padding: 10px 40px; }
 
 #headshot {
-  width: 12.5%;
+  width: 16.5%;
   float: left;
-  margin_right: 30%; }
+  margin-right: 5px; }
 
 #headshot img {
   width: 100%;
-  height: auto;
   border-radius: 50px; }
 
 #name {
@@ -141,19 +140,25 @@ section:last-child {
   text-align: center; }
 
 @media all and (min-width: 602px) and (max-width: 800px) {
-  #headshot {
-    display: none; }
   .keySkills {
     -webkit-column-count: 2;
             column-count: 2; } }
 
+@media all and (min-width: 601px) and (max-width: 660px) {
+  #name h1, #name h2 {
+    font-size: 1.7em; } }
+
 @media all and (max-width: 601px) {
+  #name h1, #name h2 {
+    font-size: 2.5em; }
   #cv {
     width: 95%;
     margin: 10px auto;
     min-width: 280px; }
   #headshot {
-    display: none; }
+    float: none;
+    margin: 4px auto;
+    width: 80%; }
   #name, #contactDetails {
     float: none;
     width: 100%;
@@ -169,6 +174,10 @@ section:last-child {
             column-count: 2; } }
 
 @media all and (max-width: 480px) {
+  #headshot {
+    float: none;
+    margin: 4px auto;
+    width: 85%; }
   .mainDetails {
     padding: 15px 15px; }
   section {
