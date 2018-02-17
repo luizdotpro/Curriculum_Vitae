@@ -27,7 +27,8 @@ p {
   color: #444; }
 
 .note {
-  padding-bottom: 10px; }
+  font-size: 0.8em;
+  font-style: italic; }
 
 .justify {
   text-align: justify;
@@ -152,8 +153,10 @@ section:last-child {
     font-size: 1.7em; } }
 
 @media all and (max-width: 601px) {
-  #name h1, #name h2 {
-    font-size: 2.5em; }
+  #name h1 {
+    font-size: 2.0em; }
+  #name h2 {
+    font-size: 1.8em; }
   #cv {
     width: 95%;
     margin: 10px auto;
@@ -171,16 +174,16 @@ section:last-child {
     width: 100%; }
   .sectionTitle {
     margin-left: -2px;
-    font-size: 1.25em; }
-  .keySkills {
-    -webkit-column-count: 2;
-            column-count: 2; } }
+    font-size: 1.25em; } }
 
 @media all and (max-width: 480px) {
   #headshot {
     float: none;
     margin: 4px auto;
     width: 85%; }
+  .keySkills {
+    -webkit-column-count: 2;
+            column-count: 2; }
   .mainDetails {
     padding: 15px 15px; }
   section {
@@ -192,8 +195,8 @@ section:last-child {
             column-count: 2; }
   .idioms {
     list-style-type: none;
-    -webkit-column-count: 1;
-            column-count: 1;
+    -webkit-column-count: 2;
+            column-count: 2;
     margin: 0px 4px 2px 4px;
     color: #444;
     text-align: center; }
