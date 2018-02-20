@@ -11,7 +11,12 @@
   <body id="top">
     <div id="cv" class="instaFade"> 
       <div class="mainDetails">
-        <div id="headshot" class="quickFade"> <img srcset="images/avatar_medium.jpg 600w, images/avatar_small.jpg 1000w" src="images/gulp.jpg" alt="Luiz Carneiro"></div>
+        <div id="headshot" class="quickFade"> 
+          <picture> 
+            <source media="(max-width: 600px)" srcset="images/cv_photo_medium.jpg">
+            <source media="(min-width: 601px)" srcset="images/cv_photo_small.jpg"><img src="images/cv_photo_medium.jpg" alt="Luiz Carneiro">
+          </picture>
+        </div>
         <div id="name">
           <h1 class="quickFade delayTwo">Luiz Carneiro</h1>
           <h2 class="quickFade delayThree">Front-end developer </h2>
