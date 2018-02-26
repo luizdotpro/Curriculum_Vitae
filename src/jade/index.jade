@@ -102,4 +102,13 @@ html(lang="en")
                          li: h3 Spanish 
                          p.subDetails Proficient 
                  .clear
+     script(type='text/javascript'). 
+         if((window.innerWidth < 800 && window.innerWidth > 601) || 
+            (window.innerWidth < 481)){
+             var listItem = document.createElement('li');
+             var listText = document.createTextNode('Webpack');
+             listItem.appendChild(listText) 
+             var storeSkills = document.getElementsByClassName('keySkills');
+             storeSkills[0].appendChild(listItem);
+         } 
 
