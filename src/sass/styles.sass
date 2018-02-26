@@ -1,3 +1,5 @@
+
+
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video 
    border: 0 
    font: inherit 
@@ -5,6 +7,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
    margin: 0 
    padding: 0 
    vertical-align: baseline 
+   list-style-position: inside 
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section 
    display: block 
@@ -63,9 +66,12 @@ p
    padding: 10px 40px 
 
 #headshot 
-   width: 16.5% 
    float: left 
-   margin-right: 5px  
+   margin-right: 10px  
+   min-height: 210px 
+   max-height: 240px 
+   min-width: 150px 
+   max-width: 160px 
 
 #headshot img 
    width: 100% 
@@ -73,10 +79,9 @@ p
    margin-top: -16px 
 
 #name 
-   float: left 
 
 #contactDetails 
-   float: right 
+   text-align: right 
 
 #contactDetails ul 
    list-style-type: none 
@@ -146,16 +151,10 @@ section:last-child
    text-align: center
 
 @media all and (min-width: 602px) and (max-width: 800px) 
-   #headshot
-	
-	
+    
    .keySkills 
+     list-style-type: circle   
      column-count: 2  
-
-@media all and (min-width: 601px) and (max-width: 660px) 
-   #name 
-     h1,h2 
-       font-size: 1.7em 
 
 @media all and (max-width: 601px) 
    #name 
@@ -168,10 +167,16 @@ section:last-child
      width: 95% 
      margin: 10px auto 
      min-width: 280px 
-	
+    
    #headshot 
      float: none 
      margin: 4px auto 
+     height: auto    
+     width: auto     
+     min-height: 0  
+     max-height: 376px    
+     min-width: 0  
+     max-width: 278px     
      width: 80%
 
    #name, #contactDetails 
@@ -195,19 +200,17 @@ section:last-child
      width: 85%
 
    .keySkills 
+     list-style-type: circle   
      column-count: 2 
 
    .mainDetails 
      padding: 15px 15px 
-	
+    
    section 
     padding: 15px 0 0 
-	
+    
    #mainArea 
      padding: 0 25px 
-
-   .keySkills 
-     column-count: 2
 
    .idioms 
      list-style-type: none 
@@ -215,7 +218,7 @@ section:last-child
      margin: 0px 4px 2px 4px 
      color: #444 
      text-align: center   
-	
+    
    #name h1 
      line-height: .8em 
      margin-bottom: 4px 

@@ -6,7 +6,8 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   font-size: 100%;
   margin: 0;
   padding: 0;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  list-style-position: inside; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -60,20 +61,20 @@ p {
   padding: 10px 40px; }
 
 #headshot {
-  width: 16.5%;
   float: left;
-  margin-right: 5px; }
+  margin-right: 10px;
+  min-height: 210px;
+  max-height: 240px;
+  min-width: 150px;
+  max-width: 160px; }
 
 #headshot img {
   width: 100%;
   border-radius: 50px;
   margin-top: -16px; }
 
-#name {
-  float: left; }
-
 #contactDetails {
-  float: right; }
+  text-align: right; }
 
 #contactDetails ul {
   list-style-type: none;
@@ -147,12 +148,9 @@ section:last-child {
 
 @media all and (min-width: 602px) and (max-width: 800px) {
   .keySkills {
+    list-style-type: circle;
     -webkit-column-count: 2;
             column-count: 2; } }
-
-@media all and (min-width: 601px) and (max-width: 660px) {
-  #name h1, #name h2 {
-    font-size: 1.7em; } }
 
 @media all and (max-width: 601px) {
   #name h1 {
@@ -166,6 +164,12 @@ section:last-child {
   #headshot {
     float: none;
     margin: 4px auto;
+    height: auto;
+    width: auto;
+    min-height: 0;
+    max-height: 376px;
+    min-width: 0;
+    max-width: 278px;
     width: 80%; }
   #name, #contactDetails {
     float: none;
@@ -184,6 +188,7 @@ section:last-child {
     margin: 20px auto;
     width: 85%; }
   .keySkills {
+    list-style-type: circle;
     -webkit-column-count: 2;
             column-count: 2; }
   .mainDetails {
@@ -192,9 +197,6 @@ section:last-child {
     padding: 15px 0 0; }
   #mainArea {
     padding: 0 25px; }
-  .keySkills {
-    -webkit-column-count: 2;
-            column-count: 2; }
   .idioms {
     list-style-type: none;
     -webkit-column-count: 2;
