@@ -210,7 +210,16 @@ section:last-child {
 
 @media print {
   #cv {
-    width: 100%; } }
+    width: 100%; }
+  #contactDetails {
+    padding-bottom: 15px; }
+  #mainArea {
+    padding-top: 22px; }
+  #name h2 {
+    font-size: 2.2em; }
+  #name h1 {
+    font-size: 3em;
+    font-weigth: 800; } }
 
 @-webkit-keyframes reset {
   0% {
