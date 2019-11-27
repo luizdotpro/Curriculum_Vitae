@@ -8,16 +8,16 @@ html(lang="en")
    link(type="text/css" rel="stylesheet" href="css/styles.min.css")
    title Luiz Carneiro - Curriculum Vitae
  body#top
-     #cv.instaFade 
+     #cv
          .mainDetails
-           #headshot.quickFade 
+           #headshot
                  picture 
                    source(media='(max-width: 600px)' srcset='images/opt_medium.jpg')
                    source(media='(min-width: 601px)' srcset='images/opt_small.jpg')
                    img(src='images/cv_photo_medium.jpg' alt='Luiz Carneiro')
              #name
                  h1.quickFade.delayTwo Luiz Carneiro
-                 h2.quickFade.delayThree Frontend developer 
+                 h2.quickFade.delayThree Software developer 
                  p.quickFade.delayThree.subDetails Brazilian - 30 years old
              #contactDetails.quickFade.delayFour
                  ul
@@ -27,23 +27,33 @@ html(lang="en")
                      li mobile: <a href="tel:004917672969754" target="_blank"> +4917672969754 </a> 
              .clear
 
-         #mainArea.quickFade.delayFive
+         #mainArea
              section 
                  article
                      .sectionTitle
+                         img(src='images/boy.png' alt='Personal Profile Icon' class='icon')
                          h1 Personal Profile
                      .sectionContent
-                         p.justify Frontend Developer and PhD in Physics with experience in cross-plataform development using ReactJS and React Native. My education in exact sciences made me a highly trained problem solver and I have been aplying that skill in programming. Javascript is nowadays the language that I feel most comfortable with, however, I am always open-minded for exploring new topics about software engineering.  
+                         p.justify Software Developer and PhD in Physics with experience in cross-plataform development using ReactJS and React Native. 
+                         ul.selfDescription
+                             li Passionate about exact sciences and professional problem solver
+                             li Highly adaptable, flexible professional who embraces teamwork 
+                             li Committed to results with quality code   
                  .clear
 
              section
                  .sectionTitle
+                     img(src='images/statistics.png' alt='Work Experience Icon' class='icon')
                      h1 Work Experience
                  .sectionContent
                      article
                          h2 Software Developer - Sport1 GmbH
                          span.subDetails June 2018 - Present |   German
-                         p.justify I am deep diving in ReactJS and its different flavors (Primitives, React Native, NextJS, GatsbyJS) together with the different tools for improving code quality (Typescript, Jest, Styled system). Besides the frontend, I have been working with Docker and Kubernetes for testing code in containers before sending it to production. Meanwhile, I worked in projects alone, with teams of two to three developers and lately in a multicultural group of fifteen colleagues. 
+                         p.justify I am deep diving in ReactJS and its different flavors (Primitives, React Native, NextJS, GatsbyJS) together with the different tools for improving code quality (Typescript, Jest, Styled system). 
+                         ul.selfDescription
+                             li Contributed to different code bases and created projects from scratch
+                             li Daily use of Docker, Ngnix, Kubernetes 
+                             li Worked in projects alone and with teams of two to fifteen multicultural developers 
                      article
                          h2 Frontend Developer - Free lance jobs
                          p.subDetails June 2017 - March 2018 |   English
@@ -56,6 +66,7 @@ html(lang="en")
 
              section
                  .sectionTitle
+                     img(src='images/computer.png' alt='Tech Skills Icon' class='icon')
                      h1 Tech Stack*
                  .sectionContent
                      ul.keySkills
@@ -74,7 +85,8 @@ html(lang="en")
 
              section
                  .sectionTitle
-                     h1 Education
+                    img(src='images/science.png' alt='Education Icon' class='icon')
+                    h1 Education 
                  .sectionContent
                      article
                          h2 Google Developer Nanodegree Scholarship  
@@ -93,7 +105,8 @@ html(lang="en")
 
              section
                  .sectionTitle
-                     h1 Languages 
+                     img(src='images/translation.png' alt='Languages Icon' class='icon')
+                     h1 Languages  
                  .sectionContent
                      ul.idioms
                          li: h3 Portuguese
@@ -109,7 +122,7 @@ html(lang="en")
          if((window.innerWidth < 800 && window.innerWidth > 601) || 
             (window.innerWidth < 481)){
                var listItem = document.createElement('li');
-               var listText = document.createTextNode('DevTools');
+               var listText = document.createTextNode('AMP');
                listItem.appendChild(listText) 
                var storeSkills = document.getElementsByClassName('keySkills');
                storeSkills[0].appendChild(listItem);
