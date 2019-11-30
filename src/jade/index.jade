@@ -10,7 +10,7 @@ html(lang="en")
  body#top
      #cv
          .mainDetails
-           #headshot
+           #headshot.quickFade 
                  picture 
                    source(media='(max-width: 600px)' srcset='images/opt_medium.jpg')
                    source(media='(min-width: 601px)' srcset='images/opt_small.jpg')
@@ -27,7 +27,7 @@ html(lang="en")
                      li mobile: <a href="tel:004917672969754" target="_blank"> +4917672969754 </a> 
              .clear
 
-         #mainArea
+         #mainArea.quickFade.delayFive
              section 
                  article
                      .sectionTitle
