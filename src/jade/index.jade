@@ -16,8 +16,8 @@ html(lang="en")
                    source(media='(min-width: 601px)' srcset='images/opt_small.jpg')
                    img(src='images/cv_photo_medium.jpg' alt='Luiz Carneiro')
              #name
-                 h1.quickFade.delayTwo Luiz Carneiro
-                 h2.quickFade.delayThree Software developer 
+                 h1.quickFade.delayTwo Luiz Carneiro, PhD
+                 h2.quickFade.delayThree Software Developer
                  p.quickFade.delayThree.subDetails Brazilian - 30 years old
              #contactDetails.quickFade.delayFour
                  ul
@@ -37,7 +37,7 @@ html(lang="en")
                          p.justify Software Developer and PhD in Physics with experience in cross-plataform development using ReactJS and React Native. 
                          ul.selfDescription
                              li Passionate about exact sciences and a professional problem solver
-                             li Ah ighly adaptable and flexible professional who embraces teamwork 
+                             li A highly adaptable and flexible professional who embraces teamwork 
                              li Committed to results with quality code   
                  .clear
 
@@ -49,7 +49,7 @@ html(lang="en")
                      article
                          h2 Software Developer - Sport1 GmbH
                          span.subDetails June 2018 - Present |   German
-                         p.justify I am deep diving in ReactJS and its different flavors (Primitives, React Native, NextJS, GatsbyJS) together with the different tools for improving code quality (Typescript, Jest, Styled system). 
+                         p.justify I am deep diving in ReactJS and its different flavors (Primitives, React Native, NextJS, GatsbyJS) together with the different tools for improving code quality (Typescript, Jest, Styled System). 
                          ul.selfDescription
                              li Contributed to different code bases and created projects from scratch
                              li Daily use of Docker, Ngnix, Kubernetes 
@@ -68,7 +68,7 @@ html(lang="en")
                          p.justify Along the PhD, I published three scientific articles in high impact factor journals mostly about astronomy and theoretical mathematical models. 
                          ul.selfDescription
                              li Data analysis, plotting and public speaking were main skills improved along this work
-                             li Around 15k lines of code written along the four years of work
+                             li Approximately 15k lines of code written along the four years 
                  .clear
 
              section
@@ -77,13 +77,13 @@ html(lang="en")
                      h1 Tech Stack*
                  .sectionContent
                      ul.keySkills
-                         li Javascript
                          li TypeScript
+                         li Javascript
                          li React 
                          li React Native
                          li CSS-in-JS
                          li SSR
-                         li Jest
+                         li AMP
                          li Docker
                          li Bash/Zshell
                      p.note.justify *Besides these, I am familiar with Python, IDL, Fortran and Latex.
@@ -98,11 +98,20 @@ html(lang="en")
                      article
                          h2 Google Developer Nanodegree Scholarship  
                          p.subDetails Specialization course (15/11/2017 - 15/08/2018)
-                         p.justify The scholarship was divided in three steps: first a candidates selection, followed by three courses about progressive web applications. The students which completed the courses and had a remarkable contribution to the community, were selected to a nanodegree course through the Udacity platform. 
+                         p.justify The scholarship had at first a candidates selection, followed by three courses about progressive web applications (PWAs). To the students which completed the courses and had a remarkable contribution to the community, it was sponsored a nanodegree through the Udacity platform. 
+                         ul.selfDescription
+                             li Data fetch and responsiviness (RWD)
+                             li Service workers, Accessibility, IndexedDB
+                             li Automate and enhance of workflow using GulpJS
 
                          h2 Universitäts-Sternwarte München - LMU
                          p.subDetails PhD (06/01/2014 - 22/05/2018)
-                         p.justify The main focus of a PhD course is to transform a master of science into a researcher capable of producing a complete study from scratch until a relevant publication. I have learned and improved many skills along this conversion, as for example: programming, team work and task automation.  
+                         p.justify The main focus of a PhD course is to transform a master of science (MSc) into a researcher capable of producing a complete study from scratch until a relevant publication. I learned and improved many skills along this time, as for example: 
+                         ul.selfDescription
+                             li Programming - for data analysis and plotting 
+                             li Task Automation - via Bash scripts and Python routines 
+                             li Team Work - collaboration with scientists for publishing articles 
+                 .clear 
 
                         //-  h2 National Observatory of Rio de Janeiro 
                         //-  p.subDetails Master (02/05/2011 - 01/07/2013)
@@ -129,7 +138,7 @@ html(lang="en")
          if((window.innerWidth < 800 && window.innerWidth > 601) || 
             (window.innerWidth < 481)){
                var listItem = document.createElement('li');
-               var listText = document.createTextNode('AMP');
+               var listText = document.createTextNode('Jest');
                listItem.appendChild(listText) 
                var storeSkills = document.getElementsByClassName('keySkills');
                storeSkills[0].appendChild(listItem);
