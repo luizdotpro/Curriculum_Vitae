@@ -13,8 +13,8 @@ html(lang="en")
            #headshot.quickFade 
                  picture 
                    source(media='(max-width: 600px)' srcset='images/opt_medium.jpg')
-                   source(media='(min-width: 601px)' srcset='images/opt_small.jpg')
-                   img(src='images/cv_photo_medium.jpg' alt='Luiz Carneiro')
+                   source(media='(min-width: 601px)' srcset='images/opt_medium.jpg')
+                   img(src='images/opt_mediumjpg' alt='Luiz Carneiro')
              #name
                  h1.quickFade.delayTwo Luiz Carneiro, PhD
                  h2.quickFade.delayThree Software Developer
@@ -29,88 +29,65 @@ html(lang="en")
 
          #mainArea.quickFade.delayFive
              section 
-                 article
                      .sectionTitle
                          img(src='images/boy.png' alt='Personal Profile Icon' class='icon')
-                         h1 Personal Profile
+                         .centerSectionTitle
+                            h1 Personal Profile
                      .sectionContent
                          p.justify Software Developer and PhD in Physics with experience in cross-platform development using ReactJS and React Native. 
-                         ul.selfDescription
-                             li Passionate about exact sciences and a professional problem solver
-                             li A highly adaptable and flexible professional who embraces teamwork 
-                             li Committed to results with quality code   
                  .clear
 
              section
                  .sectionTitle
                      img(src='images/statistics.png' alt='Work Experience Icon' class='icon')
-                     h1 Work Experience
+                     .centerSectionTitle
+                         h1 Work Experience
                  .sectionContent
                      article
                          h2 Software Developer - Sport1 GmbH
-                         span.subDetails June 2018 - Present |   German
-                         p.justify I am deep diving in ReactJS and its different variations (Primitives, React Native, NextJS, GatsbyJS) together with the different tools for improving code quality (Typescript, Jest, Styled System). 
+                         p.subDetails June 2018 - Present | German
+                         p.justify I am deep diving in ReactJS and its different variations (React Native, NextJS, GatsbyJS) together with the different tools for improving code quality (Typescript, Jest, Styled System). 
                          ul.selfDescription
                              li Contributed to different codebases and created projects from scratch
-                             li Daily use of Docker, Ngnix, Kubernetes 
                              li Worked in projects alone and with teams of two to fifteen multicultural developers 
                      article
                          h2 Frontend Developer - Free lance jobs
-                         p.subDetails June 2017 - March 2018 |   English
-                         p.justify As self-taught developer, I started transforming websites mock-ups into real code (all of these displayed on my github repositories). 
-                         ul.selfDescription
-                             li Deep dive in CSS (this CV is writen in pure-css, see github profile)
-                             li Improved communication and organization
-                             li Launched first projects  
-                     article
-                         h2 PhD in Ludwig-Maximilians-Universität München  
-                         p.subDetails January 2014 - May 2018 |   English
-                         p.justify Along the PhD, I published three scientific articles in high impact factor journals mostly about astronomy and theoretical mathematical models. 
-                         ul.selfDescription
-                             li Data analysis, plotting and public speaking were main skills improved along with this work
-                             li Approximately 15k lines of code written along the four years 
+                         p.subDetails June 2017 - March 2018 | English
+                         p.justify As self-taught developer, I started transforming websites mock-ups into real code (all of these displayed on my github repositories, this CV is an example of project writen in pure-css). 
                  .clear
 
              section
                  .sectionTitle
                      img(src='images/computer.png' alt='Tech Skills Icon' class='icon')
-                     h1 Tech Stack*
+                     .centerSectionTitle
+                        h1 Tech Stack*
                  .sectionContent
                      ul.keySkills
-                         li TypeScript
-                         li Javascript
-                         li React 
-                         li React Native
-                         li CSS-in-JS
-                         li SSR
-                         li AMP
-                         li Docker
-                         li Bash/Zshell
-                     p.note.justify *Besides these, I am familiar with Python, IDL, Fortran and Latex.
+                         li Javascript <br> TypeScript <br> React <br> Jest <br> React Native <br> SSR <br> Docker <br> AMP 
+                     p.note.justify *Besides javascript and its tools, I am also familiar with Python, Bash, IDL, Fortran and Latex.
                        //  span.note Besides these, I have also a strong experience with Python, IDL and Fortran. 
                  .clear
 
              section
                  .sectionTitle
                     img(src='images/science.png' alt='Education Icon' class='icon')
-                    h1 Education 
+                    .centerSectionTitle
+                        h1 Education 
                  .sectionContent
                      article
                          h2 Google Developer Nanodegree Scholarship  
                          p.subDetails Specialization course (15/11/2017 - 15/08/2018)
                          p.justify The scholarship had at first a candidate selection, followed by three courses about progressive web applications (PWAs). To the students who completed the courses and had a remarkable contribution to the community, it was sponsored a nanodegree through the Udacity platform. 
                          ul.selfDescription
-                             li Data fetch and responsiveness (RWD)
-                             li Service workers, Accessibility, IndexedDB
-                             li Automate and enhance of the workflow using GulpJS
+                             li Service workers, Accessibility, IndexedDB were intensively discussed in the course
 
-                         h2 Ludwig Maximilians Universität Munich 
-                         p.subDetails PhD (06/01/2014 - 22/05/2018)
-                         p.justify The main focus of a PhD course is to transform a master of science (MSc) into a researcher capable of producing a complete study from scratch until a relevant publication. I learned and improved many skills along this time, as for example: 
+                         article
+                         h2 PhD in Ludwig-Maximilians-Universität München  
+                         p.subDetails January 2014 - May 2018 |   English
+                         p.justify Along the PhD, I published three scientific articles in high impact factor journals mostly about astronomy and theoretical mathematical models. 
                          ul.selfDescription
-                             li Programming - for data analysis and plotting 
-                             li Task Automation - via Bash scripts and Python routines 
-                             li Team Work - collaboration with scientists for publishing articles 
+                             li Data analysis, plotting and public speaking were main skills improved along with this work
+                             li Approximately 15k lines of code written along the four years 
                  .clear 
 
                         //-  h2 National Observatory of Rio de Janeiro 
@@ -122,7 +99,8 @@ html(lang="en")
              section
                  .sectionTitle
                      img(src='images/translation.png' alt='Languages Icon' class='icon')
-                     h1 Languages  
+                     .centerSectionTitle
+                       h1 Languages  
                  .sectionContent
                      ul.idioms
                          li: h3 Portuguese
@@ -134,13 +112,13 @@ html(lang="en")
                          li: h3 Spanish 
                          p.subDetails Proficient 
                  .clear
-     script(type='text/javascript'). 
-         if((window.innerWidth < 800 && window.innerWidth > 601) || 
-            (window.innerWidth < 481)){
-               var listItem = document.createElement('li');
-               var listText = document.createTextNode('Jest');
-               listItem.appendChild(listText) 
-               var storeSkills = document.getElementsByClassName('keySkills');
-               storeSkills[0].appendChild(listItem);
-         } 
+    //-  script(type='text/javascript'). 
+    //-      if((window.innerWidth < 800 && window.innerWidth > 601) || 
+    //-         (window.innerWidth < 481)){
+    //-            var listItem = document.createElement('li');
+    //-            var listText = document.createTextNode('Jest');
+    //-            listItem.appendChild(listText) 
+    //-            var storeSkills = document.getElementsByClassName('keySkills');
+    //-            storeSkills[0].appendChild(listItem);
+    //-      } 
 

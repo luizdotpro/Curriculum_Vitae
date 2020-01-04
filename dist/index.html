@@ -14,7 +14,7 @@
         <div id="headshot" class="quickFade"> 
           <picture> 
             <source media="(max-width: 600px)" srcset="images/opt_medium.jpg">
-            <source media="(min-width: 601px)" srcset="images/opt_small.jpg"><img src="images/cv_photo_medium.jpg" alt="Luiz Carneiro">
+            <source media="(min-width: 601px)" srcset="images/opt_medium.jpg"><img src="images/opt_mediumjpg" alt="Luiz Carneiro">
           </picture>
         </div>
         <div id="name">
@@ -34,46 +34,71 @@
       </div>
       <div id="mainArea" class="quickFade delayFive">
         <section> 
-          <article>
-            <div class="sectionTitle"><img src="images/boy.png" alt="Personal Profile Icon" class="icon">
+          <div class="sectionTitle"><img src="images/boy.png" alt="Personal Profile Icon" class="icon">
+            <div class="centerSectionTitle">
               <h1>Personal Profile</h1>
             </div>
-            <div class="sectionContent">
-              <p class="justify">Software Developer and PhD in Physics with experience in cross-platform development using ReactJS and React Native. </p>
-              <ul class="selfDescription">
-                <li>Passionate about exact sciences and a professional problem solver</li>
-                <li>A highly adaptable and flexible professional who embraces teamwork </li>
-                <li>Committed to results with quality code   </li>
-              </ul>
-            </div>
-          </article>
-          <div class="clear"></div>
+          </div>
+          <div class="sectionContent">
+            <p class="justify">Software Developer and PhD in Physics with experience in cross-platform development using ReactJS and React Native. </p>
+          </div>
         </section>
+        <div class="clear"></div>
         <section>
           <div class="sectionTitle"><img src="images/statistics.png" alt="Work Experience Icon" class="icon">
-            <h1>Work Experience</h1>
+            <div class="centerSectionTitle">
+              <h1>Work Experience</h1>
+            </div>
           </div>
           <div class="sectionContent">
             <article>
-              <h2>Software Developer - Sport1 GmbH</h2><span class="subDetails">June 2018 - Present |   German</span>
-              <p class="justify">I am deep diving in ReactJS and its different variations (Primitives, React Native, NextJS, GatsbyJS) together with the different tools for improving code quality (Typescript, Jest, Styled System). </p>
+              <h2>Software Developer - Sport1 GmbH</h2>
+              <p class="subDetails">June 2018 - Present | German</p>
+              <p class="justify">I am deep diving in ReactJS and its different variations (React Native, NextJS, GatsbyJS) together with the different tools for improving code quality (Typescript, Jest, Styled System). </p>
               <ul class="selfDescription">
                 <li>Contributed to different codebases and created projects from scratch</li>
-                <li>Daily use of Docker, Ngnix, Kubernetes </li>
                 <li>Worked in projects alone and with teams of two to fifteen multicultural developers </li>
               </ul>
             </article>
             <article>
               <h2>Frontend Developer - Free lance jobs</h2>
-              <p class="subDetails">June 2017 - March 2018 |   English</p>
-              <p class="justify">As self-taught developer, I started transforming websites mock-ups into real code (all of these displayed on my github repositories). </p>
-              <ul class="selfDescription">
-                <li>Deep dive in CSS (this CV is writen in pure-css, see github profile)</li>
-                <li>Improved communication and organization</li>
-                <li>Launched first projects  </li>
-              </ul>
+              <p class="subDetails">June 2017 - March 2018 | English</p>
+              <p class="justify">As self-taught developer, I started transforming websites mock-ups into real code (all of these displayed on my github repositories, this CV is an example of project writen in pure-css). </p>
             </article>
+          </div>
+          <div class="clear"></div>
+        </section>
+        <section>
+          <div class="sectionTitle"><img src="images/computer.png" alt="Tech Skills Icon" class="icon">
+            <div class="centerSectionTitle">
+              <h1>Tech Stack*</h1>
+            </div>
+          </div>
+          <div class="sectionContent">
+            <ul class="keySkills">
+              <li>Javascript <br> TypeScript <br> React <br> Jest <br> React Native <br> SSR <br> Docker <br> AMP </li>
+            </ul>
+            <p class="note justify">*Besides javascript and its tools, I am also familiar with Python, Bash, IDL, Fortran and Latex.
+              <!--  span.note Besides these, I have also a strong experience with Python, IDL and Fortran. -->
+            </p>
+          </div>
+          <div class="clear"></div>
+        </section>
+        <section>
+          <div class="sectionTitle"><img src="images/science.png" alt="Education Icon" class="icon">
+            <div class="centerSectionTitle">
+              <h1>Education </h1>
+            </div>
+          </div>
+          <div class="sectionContent">
             <article>
+              <h2>Google Developer Nanodegree Scholarship  </h2>
+              <p class="subDetails">Specialization course (15/11/2017 - 15/08/2018)</p>
+              <p class="justify">The scholarship had at first a candidate selection, followed by three courses about progressive web applications (PWAs). To the students who completed the courses and had a remarkable contribution to the community, it was sponsored a nanodegree through the Udacity platform. </p>
+              <ul class="selfDescription">
+                <li>Service workers, Accessibility, IndexedDB were intensively discussed in the course</li>
+              </ul>
+              <article></article>
               <h2>PhD in Ludwig-Maximilians-Universität München  </h2>
               <p class="subDetails">January 2014 - May 2018 |   English</p>
               <p class="justify">Along the PhD, I published three scientific articles in high impact factor journals mostly about astronomy and theoretical mathematical models. </p>
@@ -83,61 +108,15 @@
               </ul>
             </article>
           </div>
-          <div class="clear"></div>
-        </section>
-        <section>
-          <div class="sectionTitle"><img src="images/computer.png" alt="Tech Skills Icon" class="icon">
-            <h1>Tech Stack*</h1>
-          </div>
-          <div class="sectionContent">
-            <ul class="keySkills">
-              <li>TypeScript</li>
-              <li>Javascript</li>
-              <li>React </li>
-              <li>React Native</li>
-              <li>CSS-in-JS</li>
-              <li>SSR</li>
-              <li>AMP</li>
-              <li>Docker</li>
-              <li>Bash/Zshell</li>
-            </ul>
-            <p class="note justify">*Besides these, I am familiar with Python, IDL, Fortran and Latex.
-              <!--  span.note Besides these, I have also a strong experience with Python, IDL and Fortran. -->
-            </p>
-          </div>
-          <div class="clear"></div>
-        </section>
-        <section>
-          <div class="sectionTitle"><img src="images/science.png" alt="Education Icon" class="icon">
-            <h1>Education </h1>
-          </div>
-          <div class="sectionContent">
-            <article>
-              <h2>Google Developer Nanodegree Scholarship  </h2>
-              <p class="subDetails">Specialization course (15/11/2017 - 15/08/2018)</p>
-              <p class="justify">The scholarship had at first a candidate selection, followed by three courses about progressive web applications (PWAs). To the students who completed the courses and had a remarkable contribution to the community, it was sponsored a nanodegree through the Udacity platform. </p>
-              <ul class="selfDescription">
-                <li>Data fetch and responsiveness (RWD)</li>
-                <li>Service workers, Accessibility, IndexedDB</li>
-                <li>Automate and enhance of the workflow using GulpJS</li>
-              </ul>
-              <h2>Ludwig Maximilians Universität Munich </h2>
-              <p class="subDetails">PhD (06/01/2014 - 22/05/2018)</p>
-              <p class="justify">The main focus of a PhD course is to transform a master of science (MSc) into a researcher capable of producing a complete study from scratch until a relevant publication. I learned and improved many skills along this time, as for example: </p>
-              <ul class="selfDescription">
-                <li>Programming - for data analysis and plotting </li>
-                <li>Task Automation - via Bash scripts and Python routines </li>
-                <li>Team Work - collaboration with scientists for publishing articles </li>
-              </ul>
-            </article>
-          </div>
           <div class="clear"> 
           </div>
           <div class="clear"></div>
         </section>
         <section>
           <div class="sectionTitle"><img src="images/translation.png" alt="Languages Icon" class="icon">
-            <h1>Languages  </h1>
+            <div class="centerSectionTitle">
+              <h1>Languages  </h1>
+            </div>
           </div>
           <div class="sectionContent">
             <ul class="idioms">
@@ -163,15 +142,5 @@
         </section>
       </div>
     </div>
-    <script type="text/javascript">
-      if((window.innerWidth < 800 && window.innerWidth > 601) || 
-         (window.innerWidth < 481)){
-            var listItem = document.createElement('li');
-            var listText = document.createTextNode('Jest');
-            listItem.appendChild(listText) 
-            var storeSkills = document.getElementsByClassName('keySkills');
-            storeSkills[0].appendChild(listItem);
-      } 
-    </script>
   </body>
 </html>
